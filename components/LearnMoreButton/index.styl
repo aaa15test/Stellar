@@ -1,0 +1,35 @@
+_white = #fff
+_gray = #636363
+_lightGray = #dddddd
+_lightBlue = #8cc9f0
+
+.learnMore
+  border-radius 8px
+  border 1px solid _lightGray
+  justify-content center
+  width 100%
+  height 5.5u
+  &.getStarted
+    background-color _lightBlue
+    margin-bottom 2u
+    +tablet()
+      margin 0
+      margin-right 2u
+
+  +tablet()
+    width 148px
+
+  +wide()
+    width 172px
+    height 52px
+
+.learnMoreText
+  color _gray
+  font-weight 300
+  font-size 2u
+  text-align center
+  &.getStarted, &.footer
+    color _white
+
+  +wide()
+    font-size 18px

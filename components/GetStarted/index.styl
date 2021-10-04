@@ -1,0 +1,56 @@
+_white = #fff
+_gray = #636363
+_lightGray = #dddddd
+_lightBlue = #8cc9f0
+
+.root
+  align-items center
+  border-top-width 1px
+  border-top-color _lightGray
+  background-color _white
+  padding 6u 3u 4u 3u
+  border-radius 0 0 4px 4px
+
+  +tablet()
+    padding 8u 0 4u 0
+
+  +wide()
+    padding 11u 0 7u 0
+
+.title
+  color _gray
+  font-size 32px
+  font-weight 300
+
+.linearLine
+  width 120px
+  height 2px
+  border-radius 2px
+  background-color #a89cc8
+  margin-top 4.5u
+  margin-bottom 3u
+
+  +tablet()
+    background-image linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0)
+
+.descriptionTitle
+  color _gray
+  font-weight 300
+  text-align center
+  font-size 2u
+  margin-bottom 4u
+
+  +tablet()
+    font-size 20px
+    margin-bottom 6u
+
+  +wide()
+    font-size 24px
+
+.buttons
+  justify-content center
+  align-items center
+  width 100%
+
+  +tablet()
+    flex-direction row

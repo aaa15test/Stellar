@@ -1,0 +1,99 @@
+
+
+.root
+  background-color rgba(55, 61, 73, 0.975)
+  width 100%
+  align-self center
+  padding 0 16px
+  flex-direction row
+  justify-content space-between
+
+  +tablet()
+    height 52px
+
+  +desktop()
+    height 54px
+
+  +wide()
+    height 58px
+  
+.name
+  color #fff
+  font-size 18px
+  font-weight 600
+  margin-right 20px
+  padding 16px 0
+
+.share, .download, .devices
+  border-radius 4px
+  margin-left 8px
+  flex-direction row
+  justify-content space-between
+
+  +tablet()
+    height 40px
+
+  +wide()
+    height 42px
+
+  @media(max-width: 768px)
+    display none
+
+.share, .devices
+  border 1px solid #676d79
+
+.share, .download
+  padding 0 16px
+
+.devices
+  align-items center
+
+.device
+  padding 0 16px
+  height 100%
+  justify-content center
+  &:hover
+    background-color #676d79
+
+.download
+  background-color #e7746f
+
+.linkIcon
+  align-self center
+  
+.facebook, .twitter
+  border-radius 3px
+  height 20px
+  padding 0 6px
+  flex-direction row
+  height 20px
+  align-self center
+
+.facebook
+  margin-right 10px
+  background-color #1877f2
+
+.twitter
+  background-color #1b95e0
+
+.like, .backTitle, .downloadTitle
+  color #fff
+  text-align center
+  align-self center
+
+.like
+  font-size 11px
+  font-weight bold
+  padding 0 4px
+
+.backTitle
+  font-size 14px
+  font-weight bold
+  padding 0 4px
+
+.links
+  flex-direction row
+  align-items center
+
+.back
+  flex-direction row

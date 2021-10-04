@@ -1,0 +1,110 @@
+_white = #fff
+_lightGray = #dddddd
+
+.root
+  padding 6u 3u 8u 3u
+
+  +tablet()
+    padding 8u 6u 10u 6u
+
+  +desktop()
+    flex-direction row
+    justify-content space-between
+
+  +wide()
+    padding 10u 10u 12u 10u
+
+.sections
+  margin-bottom 6u
+  &.rightSection
+    margin 0
+  +desktop()
+    width 48%
+    margin-bottom 0
+    &.rightSection
+      margin-left 4u
+
+.info
+  margin-bottom 7u
+  width 100%
+
+.subSectionTitle
+  font-weight 400
+  color _white
+  font-size 14px
+  width 80px
+
+  +wide()
+    font-size 18px
+    width 100px
+
+.options
+  flex-direction row
+  margin-bottom 2u
+  width 100%
+  &.last
+    margin 0
+
+.sectionDescription
+  color rgba(_white, 0.65)
+  font-weight 300
+  font-size 14px
+  flex-wrap wrap
+  max-width 380px
+  flex 1
+  &.descriptionEmail
+    border-bottom 1px dotted rgba(_white, 0.65)
+    max-width 154px
+
+    +wide()
+      max-width 194px
+
+  +wide()
+    font-size 18px
+
+.title
+  color _white
+  font-weight 300
+  margin-bottom 3u
+  font-size 22px
+
+  +desktop()
+    font-size 28px
+
+.description
+  margin-bottom 4u
+  color rgba(_white, 0.65)
+  line-height 3u
+  font-weight 300
+  font-size 2u
+
+  +wide()
+    font-size 18px
+    margin-bottom 5u
+
+.icons
+  flex-direction row
+
+.iconInside
+  border 1px solid rgba(_white, 0.35)
+  align-items center
+  justify-content center
+  margin-right 1.5u
+  width 5u
+  height @width
+  border-radius @width
+
+  +wide()
+    width 46px
+    height @width
+    border-radius @width
+
+.icon
+  width 20px
+  height @width
+
+  +wide()
+    width 22px
+    height @width
+
+    

@@ -1,0 +1,99 @@
+_gray = #636363
+_lightGray = #dddddd
+_white = #fff
+
+.root
+  align-items center
+  padding 6u 3u 4u 3u
+  background-color _white
+  border-radius 4px 4px 0 0
+
+  +tablet()
+    padding 8u 6u 6u 6u
+    border-top-left-radius 0
+    border-top-right-radius 0
+
+  +desktop()
+    flex-direction row
+    justify-content space-between
+    border-radius 0 0 0 0
+
+  +wide()
+    padding 11u 11u 9u 11u
+
+.textBlock
+  flex 1
+  align-items center
+  flex-basis auto
+  width 100%
+
+  +desktop()
+    order -1
+    align-items left
+
+.title
+  color _gray
+  font-size 32px
+  font-weight 300
+
+.linearLine
+  width 120px
+  height 2px
+  border-radius 2px
+  background-color #a89cc8
+  margin 4u 0
+
+  +tablet()
+    background-image linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0)
+
+.description
+  margin-bottom 4u
+  color _gray
+  line-height 3u
+  font-weight 300
+  font-size 14px
+  text-align center
+
+  +tablet()
+    font-size 2u
+    text-align center
+
+  +desktop()
+    text-align left
+
+  +wide()
+    font-size 18px
+
+.image
+  padding 1u
+  border 1px solid _lightGray
+  width 206px
+  height @width
+  margin-bottom 4u
+  border-radius 206px
+
+  +tablet()
+    width 278px
+    height @width
+    margin-bottom 4u
+    border-radius 278px
+
+  +desktop()
+    width 280px
+    height @width
+    margin-left 8u
+    border-radius 280px
+    margin-bottom 0
+
+  +wide()
+    width 325px
+    height @width
+    margin-left 9u
+    border-radius 325px
+
+.phoneImage
+  width 100%
+  height @width
+  border-radius 9999px
+  background-color _lightGray
+    

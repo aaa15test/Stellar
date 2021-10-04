@@ -1,0 +1,135 @@
+_white = #fff
+_gray = #636363
+_lightGray = #dddddd
+_lightPink = #efa8b0
+_lightPurple = #c79cc8
+_lightViolet = #a89cc8
+_lightBlue = #9bb2e1
+_lightCyan = #8cc9f0
+
+.root
+  align-items center
+  border-top-width 1px
+  border-top-color _lightGray
+  background-color _white
+  padding 6u 3u 4u 3u
+
+  +tablet()
+    padding 8u 6u 6u 6u
+
+  +wide()
+    padding 11u 11u 9u 11u
+
+.title
+  color _gray
+  font-size 32px
+  font-weight 300
+
+.linearLine
+  width 120px
+  height 2px
+  border-radius 2px
+  background-color #a89cc8
+  margin-top 4.5u
+  margin-bottom 3u
+
+  +tablet()
+    background-image linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0)
+
+.features
+  margin-bottom 6u
+
+  +tablet()
+    margin-bottom 9u
+    flex-direction row
+
+.feature
+  align-items center
+  width 296px
+  padding 3u
+  &.0
+    background-color _lightPink
+    border-radius 8px 8px 0 0
+    +tablet()
+      border-radius 8px 0 0 8px
+  &.1
+    background-color _lightPurple
+  &.2
+    background-color _lightViolet
+  &.3
+    background-color _lightBlue
+  &.4
+    background-color _lightCyan
+    border-radius 0 0 8px 8px
+    +tablet()
+      border-radius 0 8px 8px 0
+
+  +tablet()
+    width 20%
+    padding 3u 4u
+    justify-content center
+
+  +desktop()
+    width 180px
+    padding 4u 3.5u
+
+  +wide()
+    width 202px
+    padding 4u 3.5u
+
+.icon
+  width 70px
+  height @width
+
+  +tablet()
+    width 50px
+    height @width
+
+.iconTitle
+  color _white
+  font-weight 300
+  text-align center
+  margin-top 1u
+  font-size 5u
+
+  +tablet()
+    font-size 3u
+
+  +wide()
+    font-size 38px
+
+.description
+  color _white
+  text-align center
+  font-size 2u
+
+  +wide()
+    font-size 14px
+
+.descriptionTitle
+  color _gray
+  font-weight 300
+  text-align center
+  font-size 2u
+  margin-bottom 4u
+
+  +tablet()
+    font-size 20px
+    margin-bottom 6u
+
+  +wide()
+    font-size 24px
+
+.textDescription
+  color _gray
+  font-weight 300
+  font-size 16px
+  margin-bottom 5u
+  text-align justify
+
+  +tablet()
+    font-size 18px
+    margin-bottom 6u
+
+  +desktop()
+    column-count 2
