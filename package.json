@@ -2,7 +2,7 @@
   "name": "stellar",
   "version": "0.0.1",
   "private": true,
-  "homepage": "http://aaa15test.github.io/Stellar",
+  "homepage": "https://aaa15test.github.io/Stellar/",
   "scripts": {
     "android": "react-native run-android && (npm run adb || true) && npm run log-android",
     "ios": "react-native run-ios",
@@ -21,7 +21,7 @@
     "ios-release": "react-native run-ios --configuration Release",
     "build": "startupjs build",
     "start-production": "startupjs start-production",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
