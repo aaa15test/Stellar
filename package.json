@@ -2,7 +2,7 @@
   "name": "stellar",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://aaa15test.github.io/Stellar/",
+  "homepage": "http://aaa15test.github.io/Stellar/",
   "scripts": {
     "android": "react-native run-android && (npm run adb || true) && npm run log-android",
     "ios": "react-native run-ios",
