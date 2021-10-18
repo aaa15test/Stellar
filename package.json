@@ -2,6 +2,7 @@
   "name": "stellar",
   "version": "0.0.1",
   "private": true,
+  "homepage": "http://aaa15test.github.io/Stellar",
   "scripts": {
     "android": "react-native run-android && (npm run adb || true) && npm run log-android",
     "ios": "react-native run-ios",
@@ -19,18 +20,21 @@
     "android-release": "react-native run-android --configuration Release",
     "ios-release": "react-native run-ios --configuration Release",
     "build": "startupjs build",
-    "start-production": "startupjs start-production"
+    "start-production": "startupjs start-production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@startupjs/ui": "^0.22.0-alpha.25",
     "axios": "^0.21.2",
+    "gh-pages": "^3.2.3",
     "nconf": "^0.10.0",
     "patch-package": "^6.2.2",
     "postinstall-postinstall": "^2.1.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react-dom": "16.8.5",
     "react-hot-loader": "^4.12.13",
     "react-native": "0.62.3",
     "react-native-collapsible": "^1.5.2",
